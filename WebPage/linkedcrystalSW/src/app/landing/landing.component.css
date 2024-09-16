@@ -6,17 +6,15 @@
     z-index: 1000;
     display: inline-block;
     opacity: 0; /* Comienza como invisible */
-    transition: opacity 1s ease-in-out; /* Transición más rápida de 1 segundo */
+    transition: opacity 1s ease-in-out; /* Transición para la aparición y desaparición */
   }
   
   .gif-container.show {
     opacity: 1; /* Visible cuando se aplica la clase 'show' */
   }
   
-  /* Clase para ocultar el GIF después de 5 segundos */
   .gif-container.hide {
     opacity: 0; /* Ocultar el GIF */
-    transition: opacity 1s ease-in-out; /* Transición para la desaparición */
   }
   
   .gif-container img {

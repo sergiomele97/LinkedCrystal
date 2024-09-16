@@ -1,8 +1,8 @@
 <!-- Gif glitch_cat con chatgpt -->
-<div *ngIf="isGifVisible" class="gif-container">
-    <a class="error-text">404</a>
-    <img src="assets/gif/glitch_cat.gif" alt="GIF" />
-</div>
+<div class="gif-container" [ngClass]="{'show': isGifVisible}">
+    <div class="error-text">404</div>
+    <img src="assets/gif/glitch_cat.gif" alt="GIF">
+  </div>
   
 <!-- Gif glitch_cat con chatgpt -->
 

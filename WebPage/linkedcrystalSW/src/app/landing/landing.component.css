@@ -1,0 +1,41 @@
+/* app.component.css */
+.gif-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+    display: inline-block;
+    opacity: 0; /* Comienza como invisible */
+    transition: opacity 1s ease-in-out; /* Transición más rápida de 1 segundo */
+  }
+  
+  .gif-container.show {
+    opacity: 1; /* Visible cuando se aplica la clase 'show' */
+  }
+  
+  /* Clase para ocultar el GIF después de 5 segundos */
+  .gif-container.hide {
+    opacity: 0; /* Ocultar el GIF */
+    transition: opacity 1s ease-in-out; /* Transición para la desaparición */
+  }
+  
+  .gif-container img {
+    width: 100px;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+  
+  .error-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px 5px;
+    border-radius: 3px;
+    z-index: 2000;
+  }
+  
